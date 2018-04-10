@@ -7,21 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2CAA73205EFFD500DB7DB6 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2CAA72205EFFD500DB7DB6 /* CartItem.swift */; };
+		2E310B75206715EE00F98C25 /* UserLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E310B74206715EE00F98C25 /* UserLoginVC.swift */; };
+		2E310B772067161500F98C25 /* CreateUserAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E310B762067161500F98C25 /* CreateUserAccountVC.swift */; };
+		2E4D38EE2066DEBC00B8CEC6 /* ItemReviewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4D38ED2066DEBB00B8CEC6 /* ItemReviewsVC.swift */; };
+		2E4D38F02066DF7D00B8CEC6 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4D38EF2066DF7D00B8CEC6 /* ReviewCell.swift */; };
+		2E518CC220683CC400BECAB2 /* CollectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E518CC120683CC400BECAB2 /* CollectionHeader.swift */; };
+		2E53A84E206A18F500DE9546 /* AddReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E53A84D206A18F500DE9546 /* AddReviewVC.swift */; };
+		2E5DF576206CCDA200332209 /* MensClothingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5DF575206CCDA200332209 /* MensClothingVC.swift */; };
+		2E5DF578206D5DB300332209 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5DF577206D5DB300332209 /* HomeVC.swift */; };
+		2E6E990E206D48A900ED051D /* WomensClothingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E990D206D48A900ED051D /* WomensClothingVC.swift */; };
+		2E72A4DC205CD4FB00F55251 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E72A4DA205CD4F500F55251 /* GoogleService-Info.plist */; };
+		2E72A4DF205DB40C00F55251 /* ItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E72A4DE205DB40C00F55251 /* ItemDetailVC.swift */; };
+		2E72A4E1205DBD7900F55251 /* ShoppingCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E72A4E0205DBD7900F55251 /* ShoppingCartVC.swift */; };
+		2E72A4E3205DCA3C00F55251 /* CheckoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E72A4E2205DCA3C00F55251 /* CheckoutCell.swift */; };
+		2E72A4E9205DD61300F55251 /* TransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E72A4E8205DD61300F55251 /* TransactionVC.swift */; };
+		2E961D78206769C9006EB045 /* UpdateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E961D77206769C9006EB045 /* UpdateAccountVC.swift */; };
+		2E961D7A2067704D006EB045 /* AccountDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E961D792067704D006EB045 /* AccountDetailsVC.swift */; };
 		2EDAC2932059D979007D21BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAC2922059D979007D21BD /* AppDelegate.swift */; };
-		2EDAC2952059D979007D21BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAC2942059D979007D21BD /* ViewController.swift */; };
 		2EDAC2982059D979007D21BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDAC2962059D979007D21BD /* Main.storyboard */; };
 		2EDAC29A2059D979007D21BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDAC2992059D979007D21BD /* Assets.xcassets */; };
 		2EDAC29D2059D979007D21BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDAC29B2059D979007D21BD /* LaunchScreen.storyboard */; };
+		2EDAC2A62059D9A6007D21BD /* Clothes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAC2A52059D9A6007D21BD /* Clothes.swift */; };
+		2EDAC2A82059D9D0007D21BD /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAC2A72059D9D0007D21BD /* Review.swift */; };
+		2EDAC2AB2059E435007D21BD /* ClothesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAC2AA2059E435007D21BD /* ClothesCell.swift */; };
+		2EF2F0E42068652700A0595B /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2F0E32068652700A0595B /* Connectivity.swift */; };
+		CAFE8D2D23278D79FAFA59E7 /* Pods_WindowShopper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F15B4FFA3287FAE9F92B917 /* Pods_WindowShopper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E2CAA72205EFFD500DB7DB6 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		2E310B74206715EE00F98C25 /* UserLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginVC.swift; sourceTree = "<group>"; };
+		2E310B762067161500F98C25 /* CreateUserAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserAccountVC.swift; sourceTree = "<group>"; };
+		2E4D38ED2066DEBB00B8CEC6 /* ItemReviewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemReviewsVC.swift; sourceTree = "<group>"; };
+		2E4D38EF2066DF7D00B8CEC6 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		2E518CC120683CC400BECAB2 /* CollectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeader.swift; sourceTree = "<group>"; };
+		2E53A84D206A18F500DE9546 /* AddReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewVC.swift; sourceTree = "<group>"; };
+		2E5DF575206CCDA200332209 /* MensClothingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensClothingVC.swift; sourceTree = "<group>"; };
+		2E5DF577206D5DB300332209 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		2E6E990D206D48A900ED051D /* WomensClothingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomensClothingVC.swift; sourceTree = "<group>"; };
+		2E72A4DA205CD4F500F55251 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E72A4DE205DB40C00F55251 /* ItemDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailVC.swift; sourceTree = "<group>"; };
+		2E72A4E0205DBD7900F55251 /* ShoppingCartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartVC.swift; sourceTree = "<group>"; };
+		2E72A4E2205DCA3C00F55251 /* CheckoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutCell.swift; sourceTree = "<group>"; };
+		2E72A4E8205DD61300F55251 /* TransactionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionVC.swift; sourceTree = "<group>"; };
+		2E961D77206769C9006EB045 /* UpdateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAccountVC.swift; sourceTree = "<group>"; };
+		2E961D792067704D006EB045 /* AccountDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsVC.swift; sourceTree = "<group>"; };
 		2EDAC28F2059D979007D21BD /* WindowShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WindowShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDAC2922059D979007D21BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2EDAC2942059D979007D21BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2EDAC2972059D979007D21BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2EDAC2992059D979007D21BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EDAC29C2059D979007D21BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EDAC29E2059D979007D21BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EDAC2A52059D9A6007D21BD /* Clothes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothes.swift; sourceTree = "<group>"; };
+		2EDAC2A72059D9D0007D21BD /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		2EDAC2AA2059E435007D21BD /* ClothesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesCell.swift; sourceTree = "<group>"; };
+		2EF2F0E32068652700A0595B /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		9F15B4FFA3287FAE9F92B917 /* Pods_WindowShopper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WindowShopper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8F95D44F4DEAF32F0EA5F14 /* Pods-WindowShopper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindowShopper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WindowShopper/Pods-WindowShopper.debug.xcconfig"; sourceTree = "<group>"; };
+		CFEC41CD32A4751ACAC62593 /* Pods-WindowShopper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindowShopper.release.xcconfig"; path = "Pods/Target Support Files/Pods-WindowShopper/Pods-WindowShopper.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +73,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAFE8D2D23278D79FAFA59E7 /* Pods_WindowShopper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E72A4DD205DB3DE00F55251 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E72A4DE205DB40C00F55251 /* ItemDetailVC.swift */,
+				2E72A4E0205DBD7900F55251 /* ShoppingCartVC.swift */,
+				2E72A4E8205DD61300F55251 /* TransactionVC.swift */,
+				2E4D38ED2066DEBB00B8CEC6 /* ItemReviewsVC.swift */,
+				2E961D792067704D006EB045 /* AccountDetailsVC.swift */,
+				2E310B74206715EE00F98C25 /* UserLoginVC.swift */,
+				2E310B762067161500F98C25 /* CreateUserAccountVC.swift */,
+				2E961D77206769C9006EB045 /* UpdateAccountVC.swift */,
+				2E53A84D206A18F500DE9546 /* AddReviewVC.swift */,
+				2E6E990D206D48A900ED051D /* WomensClothingVC.swift */,
+				2E5DF575206CCDA200332209 /* MensClothingVC.swift */,
+				2E5DF577206D5DB300332209 /* HomeVC.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
 		2EDAC2862059D979007D21BD = {
 			isa = PBXGroup;
 			children = (
 				2EDAC2912059D979007D21BD /* WindowShopper */,
 				2EDAC2902059D979007D21BD /* Products */,
+				7F37FE3B63FF81369D9FC36B /* Pods */,
+				8370C39C7D14D8E817B07B8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +120,64 @@
 		2EDAC2912059D979007D21BD /* WindowShopper */ = {
 			isa = PBXGroup;
 			children = (
+				2EF2F0E22068650E00A0595B /* utils */,
+				2E72A4DD205DB3DE00F55251 /* controllers */,
+				2EDAC2A92059E137007D21BD /* views */,
+				2EDAC2A42059D987007D21BD /* models */,
 				2EDAC2922059D979007D21BD /* AppDelegate.swift */,
-				2EDAC2942059D979007D21BD /* ViewController.swift */,
+				2E72A4DA205CD4F500F55251 /* GoogleService-Info.plist */,
 				2EDAC2962059D979007D21BD /* Main.storyboard */,
 				2EDAC2992059D979007D21BD /* Assets.xcassets */,
 				2EDAC29B2059D979007D21BD /* LaunchScreen.storyboard */,
 				2EDAC29E2059D979007D21BD /* Info.plist */,
 			);
 			path = WindowShopper;
+			sourceTree = "<group>";
+		};
+		2EDAC2A42059D987007D21BD /* models */ = {
+			isa = PBXGroup;
+			children = (
+				2EDAC2A52059D9A6007D21BD /* Clothes.swift */,
+				2EDAC2A72059D9D0007D21BD /* Review.swift */,
+				2E2CAA72205EFFD500DB7DB6 /* CartItem.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		2EDAC2A92059E137007D21BD /* views */ = {
+			isa = PBXGroup;
+			children = (
+				2EDAC2AA2059E435007D21BD /* ClothesCell.swift */,
+				2E72A4E2205DCA3C00F55251 /* CheckoutCell.swift */,
+				2E4D38EF2066DF7D00B8CEC6 /* ReviewCell.swift */,
+				2E518CC120683CC400BECAB2 /* CollectionHeader.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		2EF2F0E22068650E00A0595B /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				2EF2F0E32068652700A0595B /* Connectivity.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		7F37FE3B63FF81369D9FC36B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8F95D44F4DEAF32F0EA5F14 /* Pods-WindowShopper.debug.xcconfig */,
+				CFEC41CD32A4751ACAC62593 /* Pods-WindowShopper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8370C39C7D14D8E817B07B8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F15B4FFA3287FAE9F92B917 /* Pods_WindowShopper.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EDAC2A12059D979007D21BD /* Build configuration list for PBXNativeTarget "WindowShopper" */;
 			buildPhases = (
+				CADE3E49E9E1D09C9DA6F8A7 /* [CP] Check Pods Manifest.lock */,
 				2EDAC28B2059D979007D21BD /* Sources */,
 				2EDAC28C2059D979007D21BD /* Frameworks */,
 				2EDAC28D2059D979007D21BD /* Resources */,
+				9CF933D55CBBE5967C3F4E52 /* [CP] Embed Pods Frameworks */,
+				1E9299640C969EE1067978B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -91,7 +210,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Jovel Madrid";
 				TargetAttributes = {
 					2EDAC28E2059D979007D21BD = {
@@ -124,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EDAC29D2059D979007D21BD /* LaunchScreen.storyboard in Resources */,
+				2E72A4DC205CD4FB00F55251 /* GoogleService-Info.plist in Resources */,
 				2EDAC29A2059D979007D21BD /* Assets.xcassets in Resources */,
 				2EDAC2982059D979007D21BD /* Main.storyboard in Resources */,
 			);
@@ -131,13 +251,96 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E9299640C969EE1067978B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WindowShopper/Pods-WindowShopper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CF933D55CBBE5967C3F4E52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WindowShopper/Pods-WindowShopper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WindowShopper/Pods-WindowShopper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CADE3E49E9E1D09C9DA6F8A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WindowShopper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2EDAC28B2059D979007D21BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EDAC2952059D979007D21BD /* ViewController.swift in Sources */,
+				2E53A84E206A18F500DE9546 /* AddReviewVC.swift in Sources */,
+				2EDAC2A62059D9A6007D21BD /* Clothes.swift in Sources */,
+				2E72A4E1205DBD7900F55251 /* ShoppingCartVC.swift in Sources */,
+				2EF2F0E42068652700A0595B /* Connectivity.swift in Sources */,
+				2E2CAA73205EFFD500DB7DB6 /* CartItem.swift in Sources */,
+				2E4D38EE2066DEBC00B8CEC6 /* ItemReviewsVC.swift in Sources */,
+				2EDAC2A82059D9D0007D21BD /* Review.swift in Sources */,
+				2E72A4E9205DD61300F55251 /* TransactionVC.swift in Sources */,
+				2E72A4E3205DCA3C00F55251 /* CheckoutCell.swift in Sources */,
+				2E5DF576206CCDA200332209 /* MensClothingVC.swift in Sources */,
+				2E310B772067161500F98C25 /* CreateUserAccountVC.swift in Sources */,
+				2E961D78206769C9006EB045 /* UpdateAccountVC.swift in Sources */,
+				2E5DF578206D5DB300332209 /* HomeVC.swift in Sources */,
+				2EDAC2AB2059E435007D21BD /* ClothesCell.swift in Sources */,
+				2E518CC220683CC400BECAB2 /* CollectionHeader.swift in Sources */,
+				2E961D7A2067704D006EB045 /* AccountDetailsVC.swift in Sources */,
+				2E4D38F02066DF7D00B8CEC6 /* ReviewCell.swift in Sources */,
+				2E310B75206715EE00F98C25 /* UserLoginVC.swift in Sources */,
+				2E72A4DF205DB40C00F55251 /* ItemDetailVC.swift in Sources */,
 				2EDAC2932059D979007D21BD /* AppDelegate.swift in Sources */,
+				2E6E990E206D48A900ED051D /* WomensClothingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +380,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -184,6 +388,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -234,6 +439,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -241,6 +447,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -272,6 +479,7 @@
 		};
 		2EDAC2A22059D979007D21BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8F95D44F4DEAF32F0EA5F14 /* Pods-WindowShopper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +495,7 @@
 		};
 		2EDAC2A32059D979007D21BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFEC41CD32A4751ACAC62593 /* Pods-WindowShopper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
