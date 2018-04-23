@@ -1470,13 +1470,13 @@ E1hTA
     <resources>
         <image name="dress 2" width="1500" height="2000"/>
         <image name="ic_account" width="200" height="198"/>
-        <image name="ic_add_review" width="200" height="187"/>
+        <image name="ic_add_review" width="473" height="441"/>
         <image name="ic_bar_account" width="22" height="22"/>
         <image name="ic_bar_cart" width="22" height="22"/>
         <image name="ic_bar_home" width="28" height="28"/>
         <image name="ic_empty_cart" width="77" height="77"/>
         <image name="ic_empty_list" width="62" height="52"/>
-        <image name="ic_windowshopper_transparent" width="250" height="250"/>
+        <image name="ic_windowshopper_transparent" width="500" height="500"/>
         <image name="mens_panel" width="308" height="636"/>
         <image name="shirt 8" width="636" height="636"/>
         <image name="womens_panel" width="768" height="2000"/>
