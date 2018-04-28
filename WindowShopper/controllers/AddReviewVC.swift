@@ -41,7 +41,6 @@ class AddReviewVC: UIViewController {
     }
     
     func showNoNetworkConnectionAlert(){
-        
         let alert = UIAlertController(title: "No Network Connectivity", message: "Check network connection and try again.", preferredStyle: UIAlertControllerStyle.alert)
         
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))

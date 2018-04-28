@@ -106,38 +106,38 @@ class CreateUserAccountVC: UIViewController, UITextFieldDelegate {
             let password = mPasswordTextField.text
             let confirmPassword = mConfirmPasswordTextField.text
             
-            Auth.auth().createUser(withEmail: email!, password: password!) { (user, error) in
+            if(password == confirmPassword){
+            
+                Auth.auth().createUser(withEmail: email!, password: password!) { (user, error) in
 
-                if let error = error {
-                    print(error)
-                    return
-                }
-
-                let uid = user?.uid
-                UserDefaults.standard.setValue(uid, forKey: "uid")
-                
-                if(password == confirmPassword){
-                
-                    let values = ["firstname": firstName!, "lastname": lastName!, "email": email!, "password": password!]
-                
-                    self.mRef.child("users").child(uid!).setValue(values)
-                }else{
-                    self.mMismatchedPasswordsLabel.isHidden = false
-                    return
-                }
-      
-                Auth.auth().signIn(withEmail: email!, password: password!) { (user, error) in
-                    
-                    if let error = error{
+                    if let error = error {
                         print(error)
                         return
                     }
-                    
+
                     let uid = user?.uid
                     UserDefaults.standard.setValue(uid, forKey: "uid")
-    
-                    self.tabBarController?.selectedIndex = 0
+                    
+                    let values = ["firstname": firstName!, "lastname": lastName!, "email": email!, "password": password!]
+                    
+                    self.mRef.child("users").child(uid!).setValue(values)
+                
+                    Auth.auth().signIn(withEmail: email!, password: password!) { (user, error) in
+                        
+                        if let error = error{
+                            print(error)
+                            return
+                        }
+                        
+                        let uid = user?.uid
+                        UserDefaults.standard.setValue(uid, forKey: "uid")
+        
+                        self.tabBarController?.selectedIndex = 0
+                    }
                 }
+            }else{
+                self.mMismatchedPasswordsLabel.isHidden = false
+                return
             }
         }else{
             showNoNetworkConnectionAlert()

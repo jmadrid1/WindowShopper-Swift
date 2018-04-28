@@ -19,16 +19,13 @@ class UpdateAccountVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var mMismatchedPasswordsLabel: UILabel!
     
     @IBOutlet weak var mSaveButton: UIButton!
-    
-    var mUid: String?
-    
+        
     var mRef: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         mRef = Database.database().reference()
-        mUid = UserDefaults.standard.string(forKey: "uid")
         
         mFirstNameTextField.tag = 0
         mLastNameTextField.tag = 1
@@ -158,16 +155,18 @@ class UpdateAccountVC: UIViewController, UITextFieldDelegate {
         
         if(Connectivity.isConnectedToNetwork()){
         
+            let uid = UserDefaults.standard.string(forKey: "uid")
+            
             let firstName = mFirstNameTextField.text
             let lastName = mLastNameTextField.text
             let email = mEmailTextField.text?.lowercased()
             let password = mPasswordTextField.text
             let confirmPassword = mConfirmPasswordTextField.text
             
-            let values = ["firstname": firstName!, "lastname": lastName!, "email": email!, "password": password!]
-           
             if(password == confirmPassword){
-                mRef.child("users").child(mUid!).updateChildValues(values)
+                let values = ["firstname": firstName!, "lastname": lastName!, "email": email!, "password": password!]
+           
+                mRef.child("users").child(uid!).updateChildValues(values)
             }else{
                 self.mMismatchedPasswordsLabel.isHidden = false
             }
