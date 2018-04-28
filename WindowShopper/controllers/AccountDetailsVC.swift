@@ -20,7 +20,6 @@ class AccountDetailsVC: UIViewController {
         super.viewDidLoad()
 
         mRef = Database.database().reference()
-        checkIfUserIsLoggedIn()
         
         self.navigationController?.isNavigationBarHidden = true
         self.navigationController?.isToolbarHidden = true
