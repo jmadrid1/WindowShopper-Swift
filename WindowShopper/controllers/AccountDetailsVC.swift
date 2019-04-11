@@ -24,27 +24,22 @@ class AccountDetailsVC: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
         self.navigationController?.isToolbarHidden = true
         
-        mBannerView.backgroundColor = #colorLiteral(red: 0.849943329, green: 0.7401361611, blue: 0.239743404, alpha: 1)
+        mBannerView.backgroundColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)
         mBannerIconImage.image = UIImage(named: "ic_account.png")
-        mBannerIconImage.frame = CGRect(x: 88, y: 134, width: 238, height: 236)
         
         mFullNameLabel.font = UIFont.boldSystemFont(ofSize: 24)
-        mFullNameLabel.frame = CGRect(x: 137, y: 377, width: 147, height: 21)
         
         mEmailLabel.font = mEmailLabel.font.withSize(17)
         mEmailLabel.textColor = UIColor.lightGray
-        mEmailLabel.frame = CGRect(x: 152, y: 404, width: 108, height: 21)
         
         mUpdateAccountButton.setTitle("Update Account Information", for: .normal)
-        mUpdateAccountButton.setTitleColor(#colorLiteral(red: 0.849943329, green: 0.7401361611, blue: 0.239743404, alpha: 1), for: .normal
+        mUpdateAccountButton.setTitleColor(#colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1), for: .normal
         )
         mUpdateAccountButton.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        mUpdateAccountButton.frame = CGRect(x: 113, y: 483, width: 194, height: 30)
         
         mSignOutButton.setTitle("Sign Out", for: .normal)
-        mSignOutButton.setTitleColor(#colorLiteral(red: 0.849943329, green: 0.7401361611, blue: 0.239743404, alpha: 1), for: .normal)
+        mSignOutButton.setTitleColor(#colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1), for: .normal)
         mSignOutButton.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        mSignOutButton.frame = CGRect(x: 171, y: 519, width: 72, height: 30)
         
         checkIfUserIsLoggedIn()
     }
