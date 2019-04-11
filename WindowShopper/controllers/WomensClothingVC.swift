@@ -21,14 +21,9 @@ class WomensClothingVC: UIViewController, UICollectionViewDataSource, UICollecti
         
         mRef = Database.database().reference()
         mEmptyView.isHidden = true
-        
-        mEmptyView.frame = CGRect(x: 0, y: 64, width: 414, height: 622)
         mEmptyView.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
         
         mEmptyCollectionImage.image = UIImage(named: "ic_empty_list.png")
-        mEmptyCollectionImage.frame = CGRect(x: 155, y: 271, width: 104, height: 81)
-        
-        mClothesCollection.frame = CGRect(x: 0, y: 66, width: 414, height: 620)
         
         getClothingItems()
     }
@@ -202,20 +197,16 @@ class WomensClothingVC: UIViewController, UICollectionViewDataSource, UICollecti
         let itemUrl = URL(string: (item?.image)!)
         let placeHolderImage = UIImage(named: "ic_placeholder.png")
         cell.mClothesImage.kf.setImage(with: itemUrl, placeholder: placeHolderImage)
-        cell.mClothesImage.frame = CGRect(x: 10, y: 7, width: 301, height: 304)
         
         cell.mTitle.text = item?.title
         cell.mTitle.textColor = UIColor.white
-        cell.mTitle.frame = CGRect(x: 94, y: -1, width: 133, height: 21)
-        
-        cell.mPriceView.frame = CGRect(x: 10, y: 312, width: 301, height: 33)
+
         cell.mPriceView.backgroundColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
         
         let price:Double = (item?.price)!
         cell.mPrice.text = "$" + String(price)
         cell.mPrice.font = UIFont.boldSystemFont(ofSize: 11)
         cell.mPrice.textColor = UIColor.white
-        cell.mPrice.frame = CGRect(x: 126, y: 13, width: 51, height: 21)
         
         return cell;
     }
