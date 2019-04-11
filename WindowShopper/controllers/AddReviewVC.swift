@@ -23,7 +23,7 @@ class AddReviewVC: UIViewController {
         mIconImage.image = UIImage(named: "ic_add_review.png")
         
         mRatingScale.frame = CGRect(x: 105, y: 359, width: 209, height: 37)
-        mRatingScale.settings.filledColor = #colorLiteral(red: 0.849943329, green: 0.7401361611, blue: 0.239743404, alpha: 1)
+        mRatingScale.settings.filledColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)
         mRatingScale.settings.minTouchRating = 1
         mRatingScale.settings.starSize = 34
         mRatingScale.settings.totalStars = 5
@@ -32,7 +32,7 @@ class AddReviewVC: UIViewController {
         
         mSubmitReview.frame = CGRect(x: 156, y: 525, width: 101, height: 30)
         mSubmitReview.setTitle("Submit Review", for: .normal)
-        mSubmitReview.setTitleColor(#colorLiteral(red: 0.849943329, green: 0.7401361611, blue: 0.239743404, alpha: 1), for: .normal)
+        mSubmitReview.setTitleColor(#colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1), for: .normal)
         mSubmitReview.titleLabel?.font = UIFont.systemFont(ofSize: 15)
     }
 
