@@ -18,8 +18,7 @@ class ItemReviewsVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         super.viewDidLoad()
         
         mRef = Database.database().reference()
-        
-        mReviewsTable.frame = CGRect(x: 0, y: 62, width: 414, height: 625)
+    
         mReviewsTable.rowHeight = 85
         
         let uid = UserDefaults.standard.string(forKey: "uid")
