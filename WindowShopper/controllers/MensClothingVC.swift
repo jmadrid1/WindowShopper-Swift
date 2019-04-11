@@ -22,14 +22,10 @@ class MensClothingVC: UIViewController, UICollectionViewDataSource, UICollection
         mRef = Database.database().reference()
 
         mEmptyView.isHidden = true
-        
-        mEmptyView.frame = CGRect(x: 0, y: 64, width: 414, height: 622)
         mEmptyView.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
         
         mEmptyCollectionImage.image = UIImage(named: "ic_empty_list.png")
-        mEmptyCollectionImage.frame = CGRect(x: 155, y: 271, width: 104, height: 81)
-        
-        mClothesCollection.frame = CGRect(x: 0, y: 66, width: 414, height: 620)
+
         getClothingItems()
     }
     
@@ -155,23 +151,21 @@ class MensClothingVC: UIViewController, UICollectionViewDataSource, UICollection
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "collectionHeader", for: indexPath) as! CollectionHeader
         
         switch indexPath.section {
-        case 0:
-            header.mHeaderTitleLabel.text = "Shirts"
-            header.mHeaderTitleLabel.sizeToFit()
-            break
             
-        case 1:
-            header.mHeaderTitleLabel.text = "Jackets"
-            header.mHeaderTitleLabel.sizeToFit()
-            break
+            case 0:
+                header.mHeaderTitleLabel.text = "Shirts"
+                break
             
-        case 2:
-            header.mHeaderTitleLabel.text = "Pants"
-            header.mHeaderTitleLabel.sizeToFit()
-            break
+            case 1:
+                header.mHeaderTitleLabel.text = "Jackets"
+                break
             
-        default:
-            break
+            case 2:
+                header.mHeaderTitleLabel.text = "Pants"
+                break
+            
+            default:
+                break
         }
         
         return header;
@@ -202,20 +196,16 @@ class MensClothingVC: UIViewController, UICollectionViewDataSource, UICollection
         let itemUrl = URL(string: (item?.image)!)
         let placeHolderImage = UIImage(named: "ic_placeholder.png")
         cell.mClothesImage.kf.setImage(with: itemUrl, placeholder: placeHolderImage)
-        cell.mClothesImage.frame = CGRect(x: 13, y: 0, width: 292, height: 298)
         
         cell.mTitle.text = item?.title
         cell.mTitle.textColor = UIColor.white
-        cell.mTitle.frame = CGRect(x: 69, y: 0, width: 169, height: 21)
-        
-        cell.mPriceView.frame = CGRect(x: 13, y: 298, width: 292, height: 32)
+
         cell.mPriceView.backgroundColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
         
         let price:Double = (item?.price)!
         cell.mPrice.text = "$" + String(price)
-        cell.mPrice.font = UIFont.boldSystemFont(ofSize: 11)
+        cell.mPrice.font = UIFont.boldSystemFont(ofSize: 14)
         cell.mPrice.textColor = UIColor.white
-        cell.mPrice.frame = CGRect(x: 128, y: 13, width: 56, height: 21)
     
         return cell;
     }
