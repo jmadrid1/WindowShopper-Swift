@@ -10,12 +10,6 @@ class UpdateAccountVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var mConfirmPasswordTextField: UITextField!
     @IBOutlet weak var mEmailTextField: UITextField!
     
-    @IBOutlet weak var mFirstNameLabel: UILabel!
-    @IBOutlet weak var mLastNameLabel: UILabel!
-    @IBOutlet weak var mEmailLabel: UILabel!
-    @IBOutlet weak var mPasswordLabel: UILabel!
-    @IBOutlet weak var mConfirmPasswordLabel: UILabel!
-    
     @IBOutlet weak var mMismatchedPasswordsLabel: UILabel!
     
     @IBOutlet weak var mSaveButton: UIButton!
@@ -33,35 +27,11 @@ class UpdateAccountVC: UIViewController, UITextFieldDelegate {
         mPasswordTextField.tag = 3
         mConfirmPasswordTextField.tag = 4
         
-        mFirstNameLabel.text = "First Name:"
-        mLastNameLabel.text = "Last Name:"
-        mEmailLabel.text = "Email:"
-        mPasswordLabel.text = "Password:"
-        mConfirmPasswordLabel.text = "Confirm Password:"
-        
-        mFirstNameLabel.font = UIFont.systemFont(ofSize: 14)
-        mLastNameLabel.font = UIFont.systemFont(ofSize: 14)
-        mEmailLabel.font = UIFont.systemFont(ofSize: 14)
-        mPasswordLabel.font = UIFont.systemFont(ofSize: 14)
-        mConfirmPasswordLabel.font = UIFont.systemFont(ofSize: 14)
-        
-        mFirstNameLabel.frame = CGRect(x: 103, y: 229, width: 73, height: 17)
-        mLastNameLabel.frame = CGRect(x: 103, y: 277, width: 73, height: 17)
-        mEmailLabel.frame = CGRect(x: 135, y: 328, width: 39, height: 17)
-        mPasswordLabel.frame = CGRect(x: 110, y: 384, width: 67, height: 17)
-        mConfirmPasswordLabel.frame = CGRect(x: 55, y: 431, width: 122, height: 17)
-        
         mFirstNameTextField.placeholder = "Enter First Name"
         mLastNameTextField.placeholder = "Enter Last Name"
         mEmailTextField.placeholder = "Enter Email"
         mPasswordTextField.placeholder = "Enter Password"
         mConfirmPasswordTextField.placeholder = "Confirm Password"
-        
-        mFirstNameTextField.frame = CGRect(x: 185, y: 222, width: 154, height: 30)
-        mLastNameTextField.frame = CGRect(x: 185, y: 271, width: 154, height: 30)
-        mEmailTextField.frame = CGRect(x: 185, y: 322, width: 169, height: 30)
-        mPasswordTextField.frame = CGRect(x: 185, y: 377, width: 145, height: 30)
-        mConfirmPasswordTextField.frame = CGRect(x: 185, y: 424, width: 145, height: 30)
         
         mFirstNameTextField.autocapitalizationType = .words
         mLastNameTextField.autocapitalizationType = .words
@@ -72,12 +42,14 @@ class UpdateAccountVC: UIViewController, UITextFieldDelegate {
         mConfirmPasswordTextField.isSecureTextEntry = true
         
         mSaveButton.setTitle("Save Changes", for: .normal)
-        mSaveButton.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        mSaveButton.setTitleColor(#colorLiteral(red: 0.849943329, green: 0.7401361611, blue: 0.239743404, alpha: 1), for: .normal)
-        mSaveButton.frame = CGRect(x: 170, y: 566, width: 98, height: 30)
+        mSaveButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
+        mSaveButton.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+        mSaveButton.backgroundColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)
+        mSaveButton.layer.cornerRadius = 15
+        mSaveButton.layer.borderWidth = 2
+        mSaveButton.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
         mMismatchedPasswordsLabel.text = "*Passwords do not match"
-        mMismatchedPasswordsLabel.frame = CGRect(x: 121, y: 520, width: 196, height: 21)
         mMismatchedPasswordsLabel.textColor = UIColor.red
         mMismatchedPasswordsLabel.isHidden = true
     }
