@@ -143,7 +143,7 @@ class TransactionVC: UIViewController, UITextFieldDelegate, UIPickerViewDataSour
         addDoneButton()
         
         mButtonView.frame = CGRect(x: 67, y: 558, width: 240, height: 52)
-        mButtonView.backgroundColor = #colorLiteral(red: 0.849943329, green: 0.7401361611, blue: 0.239743404, alpha: 1)
+        mButtonView.backgroundColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)
         
         mTransactionButton.setTitle("Commit Transaction", for: .normal)
         mTransactionButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
