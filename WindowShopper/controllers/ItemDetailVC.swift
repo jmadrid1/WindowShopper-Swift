@@ -23,8 +23,7 @@ class ItemDetailVC: UIViewController {
     @IBOutlet weak var mQuantityLabel: UILabel!
     @IBOutlet weak var mQuantityStepper: UIStepper!
     @IBOutlet weak var mQuantityAmountLabel: UILabel!
-    
-    @IBOutlet weak var mButtonView: UIView!
+
     @IBOutlet weak var mAddToCartButton: UIButton!
     
     var mReviewsList: [Review]?
@@ -47,14 +46,15 @@ class ItemDetailVC: UIViewController {
         mRef = Database.database().reference()
         
         let itemUrl = URL(string: (mSelectedItem?.image)!)
-        let placeHolderImage = UIImage(named: "ic_hanger.png")
+        let placeHolderImage = UIImage(named: "ic_placeholder.png")
         mClothesImage.kf.setImage(with: itemUrl, placeholder: placeHolderImage)
-        mClothesImage.frame = CGRect(x: 46, y: 96, width: 316, height: 336)
+
+        mPriceView.backgroundColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)
+        mPriceView.layer.cornerRadius = 17
+        mPriceView.layer.borderWidth = 2
+        mPriceView.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
-        mPriceView.backgroundColor = #colorLiteral(red: 0.849943329, green: 0.7401361611, blue: 0.239743404, alpha: 1)
-        mPriceView.frame = CGRect(x: 298, y: 411, width: 64, height: 21)
-        mPriceLabel.font = UIFont.boldSystemFont(ofSize: 14)
-        mPriceLabel.frame = CGRect(x: 3.13, y: 0, width: 56, height: 21)
+        mPriceLabel.font = UIFont.boldSystemFont(ofSize: 18)
         
         mItemTitle.text = mSelectedItem?.title
         mPriceLabel.text = "$" + (mSelectedItem?.price.description)!
@@ -63,9 +63,8 @@ class ItemDetailVC: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(ItemDetailVC.segueToReviews))
         mReviewsLabel.addGestureRecognizer(tap)
         getItemReviewCount()
-        
-        mSummaryTextView.frame = CGRect(x: 36, y: 462, width: 349, height: 73)
-        mSummaryTextView.font = UIFont.systemFont(ofSize: 14)
+
+        mSummaryTextView.font = UIFont.systemFont(ofSize: 15)
         mSummaryTextView.text = mSelectedItem?.summary
         
         mCurrentQuantityXS = (mSelectedItem?.sizes["xs"])!
@@ -76,10 +75,8 @@ class ItemDetailVC: UIViewController {
         
         mSizeLabel.text = "Size:"
         mSizeLabel.font = mSizeLabel.font.withSize(14)
-        mSizeLabel.frame = CGRect(x: 68, y: 561, width: 37, height: 21)
         
-        mSizeSelector.frame = CGRect(x: 116, y: 555, width: 179, height: 29)
-        mSizeSelector.tintColor = #colorLiteral(red: 0.849943329, green: 0.7401361611, blue: 0.239743404, alpha: 1)
+        mSizeSelector.tintColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)
         
         mSizeSelector.setTitle("XS", forSegmentAt: 0)
         mSizeSelector.setTitle("S", forSegmentAt: 1)
@@ -91,21 +88,18 @@ class ItemDetailVC: UIViewController {
         
         mQuantityLabel.text = "Quantity:"
         mQuantityLabel.font = mQuantityLabel.font.withSize(14)
-        mQuantityLabel.frame = CGRect(x: 42, y: 595, width: 65, height: 21)
-        
-        mQuantityStepper.frame = CGRect(x: 116, y: 591, width: 94, height: 29)
-        mQuantityStepper.tintColor = #colorLiteral(red: 0.849943329, green: 0.7401361611, blue: 0.239743404, alpha: 1)
+
+        mQuantityStepper.tintColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)
 
         mQuantityAmountLabel.text = "0"
         mQuantityAmountLabel.font = UIFont.boldSystemFont(ofSize: 17)
-        mQuantityAmountLabel.frame = CGRect(x: 228, y: 595, width: 11, height: 21)
         
-        mButtonView.frame = CGRect(x: 31, y: 635, width: 349, height: 33)
-        mButtonView.backgroundColor = UIColor.lightGray
+        mAddToCartButton.setTitle("+", for: .normal)
+        mAddToCartButton.frame = CGRect(x: 289, y: 546, width: 55, height: 55)
+        mAddToCartButton.layer.cornerRadius = 0.5 * mAddToCartButton.bounds.size.width
+        mAddToCartButton.clipsToBounds = true
         
-        mAddToCartButton.setTitle("Add To Cart", for: .normal)
-        mAddToCartButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 19)
-        mAddToCartButton.frame = CGRect(x: 0, y: 3, width: 349, height: 30)
+        mAddToCartButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 39)
     }
 
     override func didReceiveMemoryWarning() {
