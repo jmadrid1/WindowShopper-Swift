@@ -4,8 +4,6 @@ import Firebase
 
 class ShoppingCartVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var mSummaryView: UIView!
-    @IBOutlet weak var mSummaryLabel: UILabel!
     
     @IBOutlet weak var mEmptyView: UIView!
     
@@ -16,7 +14,6 @@ class ShoppingCartVC: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var mItemsQuantityLabel: UILabel!
     @IBOutlet weak var mTotalAmountLabel: UILabel!
     
-    @IBOutlet weak var mButtonView: UIView!
     @IBOutlet weak var mCheckoutButton: UIButton!
 
     var mCheckoutList = [CartItem]()
@@ -31,37 +28,24 @@ class ShoppingCartVC: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         
         mRef = Database.database().reference()
-        
-        mSummaryView.frame = CGRect(x: 0, y: 67, width: 240, height: 36)
-        mSummaryView.backgroundColor = UIColor.lightGray
-        
-        mSummaryLabel.frame = CGRect(x: 12, y: 9, width: 220, height: 21)
-        mSummaryLabel.text = "Shopping Cart Summary:"
-        mSummaryLabel.font = UIFont.boldSystemFont(ofSize: 17)
-        
-        mEmptyView.frame = CGRect(x: 0, y: 127, width: 414, height: 399)
+
         mEmptyView.backgroundColor = #colorLiteral(red: 0.9685532451, green: 0.9686691165, blue: 0.968513906, alpha: 1)
-        
-        mEmptyCartImage.frame = CGRect(x: 159.06, y: 156.94, width: 94, height: 87)
+
         mEmptyCartImage.image = UIImage(named: "ic_empty_cart.png")
-        
-        mCheckoutTable.frame = CGRect(x: 0, y: 127, width: 414, height: 399)
+
         mCheckoutTable.rowHeight = 65
-        
-        mItemsQuantityLabel.frame = CGRect(x: 42, y: 534, width: 80, height: 21)
+
         mItemsQuantityLabel.text = "Items: 0"
         mItemsQuantityLabel.font = UIFont.systemFont(ofSize: 17)
-        
-        mTotalAmountLabel.frame = CGRect(x: 213, y: 534, width: 156, height: 21)
+  
         mTotalAmountLabel.text = "Total Amount: $0.00"
         mTotalAmountLabel.font = UIFont.systemFont(ofSize: 17)
-        
-        mButtonView.frame = CGRect(x: 20, y: 593, width: 374, height: 42)
-        mButtonView.backgroundColor = #colorLiteral(red: 0.849943329, green: 0.7401361611, blue: 0.239743404, alpha: 1)
-        
-        mCheckoutButton.frame = CGRect(x: 0, y: 2, width: 374, height: 39)
+
         mCheckoutButton.setTitle("Checkout", for: .normal)
         mCheckoutButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        mCheckoutButton.backgroundColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)
+        mCheckoutButton.layer.cornerRadius = 15
+        mCheckoutButton.layer.borderWidth = 2
         
         let uid = UserDefaults.standard.string(forKey: "uid")
         
@@ -204,7 +188,6 @@ class ShoppingCartVC: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     @IBAction func checkoutButtonPressed(){
-    
         performSegue(withIdentifier: "transactionSegue", sender: mTotalAmount)
     }
     
